@@ -16,70 +16,151 @@
 
 <body>
   <div class="container">
-    <h1>What's your programming language?</h1>
-    <h3>Answer the questions below to see your match!</h3>
-    <form class="formOne">
-      <div class="dropdown">
-        <button class="btn btn-info dropdown-toggle" type="button" id="favorite-food" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Favorite Food
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <button class="dropdown-item" type="button" value="pizza">Pizza</button>
-          <button class="dropdown-item" type="button" value="cheeseburger">Cheeseburger</button>
-          <button class="dropdown-item" type="button" value="steak">Steak</button>
-        </div>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">What's your programming language?</h1>
+        <p class="lead">Answer the questions below to find out</p>
       </div>
-      <div class="dropdown">
-        <button class="btn btn-info dropdown-toggle" type="button" id="favorite-food" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Favorite Food
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <button class="dropdown-item" type="button" value="pizza">Pizza</button>
-          <button class="dropdown-item" type="button" value="cheeseburger">Cheeseburger</button>
-          <button class="dropdown-item" type="button" value="steak">Steak</button>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="btn btn-info dropdown-toggle" type="button" id="favorite-food" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Favorite Animal
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <button class="dropdown-item" type="button" value="dog">Dog</button>
-          <button class="dropdown-item" type="button" value="cat">Cat</button>
-          <button class="dropdown-item" type="button" value="parrot">Parrot</button>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="btn btn-info dropdown-toggle" type="button" id="favorite-food" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Favorite Movie
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <button class="dropdown-item" type="button" value="castaway">Castaway</button>
-          <button class="dropdown-item" type="button" value="love-actually">Love Actually</button>
-          <button class="dropdown-item" type="button" value="wall-e">Wall-E</button>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="btn btn-info dropdown-toggle" type="button" id="favorite-food" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Favorite Sport
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <button class="dropdown-item" type="button" value="basketball">Basketball</button>
-          <button class="dropdown-item" type="button" value="football">Football</button>
-          <button class="dropdown-item" type="button" value="baseball">Baseball</button>
-        </div>
-      </div>
-      <button type="submit" class="btn-primary">Show me my language match</button>
-    </form>
-    <div class="output">
-
     </div>
+
+    <form class="form-group">
+      <div class="form-group row">
+        <div class="col-md-6">
+          <h4><span class="label label-default">What's your favorite food?</span> </h4>
+        </div>
+        <div class="col-md-6">
+          <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" id="favorite-food" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Favorite Food
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <button class="dropdown-item" type="button" value="1">Pizza</button>
+              <button class="dropdown-item" type="button" value="2">Cheeseburger</button>
+              <button class="dropdown-item" type="button" value="3">Steak</button>
+            </div>
+            <div class="card" id="food-card" style="width: 20rem;">
+              <img class="card-img-top" src="..." alt="a picture of your favorite food.">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-md-6">
+          <h4><span class="label label-default">What's your favorite activity?</span> </h4>
+        </div>
+        <div class="col-md-6">
+          <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" id="favorite-activity" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Favorite Activity
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <button class="dropdown-item" type="button" value="1">Skiing</button>
+              <button class="dropdown-item" type="button" value="2">Hike</button>
+              <button class="dropdown-item" type="button" value="3">What's activity?</button>
+            </div>
+            <div class="card" id="activity-card" style="width: 20rem;">
+              <img class="card-img-top" src="..." alt="a picture of your favorite activity.">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="form-group row">
+        <div class="col-md-6">
+          <h4><span class="label label-default">What's your favorite animal?</span> </h4>
+        </div>
+        <div class="col-md-6">
+          <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" id="favorite-animal" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Favorite Animal
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <button class="dropdown-item" type="button" value="1">Dog</button>
+              <button class="dropdown-item" type="button" value="2">Cat</button>
+              <button class="dropdown-item" type="button" value="3">Parrot</button>
+            </div>
+            <div class="card" id="animal-card" style="width: 20rem;">
+              <img class="card-img-top" src="..." alt="a picture of your favorite animal.">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="form-group row">
+        <div class="col-md-6">
+          <h4><span class="label label-default">What's your favorite movie?</span> </h4>
+        </div>
+        <div class="col-md-6">
+          <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" id="favorite-movie" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Favorite Movie
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <button class="dropdown-item" type="button" value="1">Castaway</button>
+              <button class="dropdown-item" type="button" value="l2">Love Actually</button>
+              <button class="dropdown-item" type="button" value="3">Wall-E</button>
+            </div>
+            <div class="card" id="movie-card" style="width: 20rem;">
+              <img class="card-img-top" src="..." alt="a picture of your favorite movie.">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-md-6">
+          <h4><span class="label label-default">What's your favorite sport?</span> </h4>
+        </div>
+        <div class="col-md-6">
+          <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" id="favorite-sport" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Favorite Sport
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <button class="dropdown-item" type="button" value="1">Basketball</button>
+              <button class="dropdown-item" type="button" value="2">Football</button>
+              <button class="dropdown-item" type="button" value="3">Baseball</button>
+            </div>
+            <div class="card" id="sport-card" style="width: 20rem;">
+              <img class="card-img-top" src="..." alt="a picture of your favorite sport.">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group text-center top-buffer">
+        <button type="submit" class="btn btn-primary">Show me my language match</button>
+      </div>
+      <div class="output">
+      </div>
+    </form>
   </div>
+
+
 </body>
 
 </html>
