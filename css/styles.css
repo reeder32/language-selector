@@ -14,3 +14,12 @@
    border: palegreen;
   border-width: 2px;
 }
+
+.reveal p {
+  text-align: center;
+  color: darkgray;
+  font-size: large;
+  width: 50px;
+  height: auto;
+  padding: auto;
+}
