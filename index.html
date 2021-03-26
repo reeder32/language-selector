@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.css" , type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
   <script src="js/scripts.js"></script>
 
   <title>What's your programming language?</title>
@@ -15,7 +16,69 @@
 
 <body>
   <div class="container">
+    <h1>What's your programming language?</h1>
+    <h3>Answer the questions below to see your match!</h3>
+    <form class="formOne">
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" id="favorite-food" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Favorite Food
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <button class="dropdown-item" type="button" value="pizza">Pizza</button>
+          <button class="dropdown-item" type="button" value="cheeseburger">Cheeseburger</button>
+          <button class="dropdown-item" type="button" value="steak">Steak</button>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" id="favorite-food" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Favorite Food
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <button class="dropdown-item" type="button" value="pizza">Pizza</button>
+          <button class="dropdown-item" type="button" value="cheeseburger">Cheeseburger</button>
+          <button class="dropdown-item" type="button" value="steak">Steak</button>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" id="favorite-food" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Favorite Animal
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <button class="dropdown-item" type="button" value="dog">Dog</button>
+          <button class="dropdown-item" type="button" value="cat">Cat</button>
+          <button class="dropdown-item" type="button" value="parrot">Parrot</button>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" id="favorite-food" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Favorite Movie
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <button class="dropdown-item" type="button" value="castaway">Castaway</button>
+          <button class="dropdown-item" type="button" value="love-actually">Love Actually</button>
+          <button class="dropdown-item" type="button" value="wall-e">Wall-E</button>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" id="favorite-food" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Favorite Sport
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <button class="dropdown-item" type="button" value="basketball">Basketball</button>
+          <button class="dropdown-item" type="button" value="football">Football</button>
+          <button class="dropdown-item" type="button" value="baseball">Baseball</button>
+        </div>
+      </div>
+      <button type="submit" class="btn-primary">Show me my language match</button>
+    </form>
+    <div class="output">
 
+    </div>
   </div>
 </body>
 
