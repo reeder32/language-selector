@@ -2,11 +2,14 @@
 // jQuery is used to show and hide the result after questions are answered and submitted. (Tip: test your app several times with different answers.) - #output
 //
 // Business logic
-
+function getScore(food, activity, animal, movie, sport) {
+  return food + activity + animal + movie + sport;
+}
 
 // UI Logic
 $(document).ready(function () {
-  $('#food button').on('click', function () {
+  $('#food button').click(function (e) {
+    e.preventDefault();
     const txt = $(this).text().toLowerCase();
     const index = $(this).attr("name");
     console.log(index);
@@ -18,7 +21,8 @@ $(document).ready(function () {
       $(".reveal").fadeIn();
     }
   });
-  $('#activity button').on('click', function () {
+  $('#activity button').click(function (e) {
+    e.preventDefault();
     let txt = $(this).text().toLowerCase();
     const index = $(this).attr("name");
     $("#activity-card img").remove();
@@ -32,7 +36,8 @@ $(document).ready(function () {
       $(".reveal").fadeIn();
     }
   });
-  $('#animal button').on('click', function () {
+  $('#animal button').click(function (e) {
+    e.preventDefault();
     const txt = $(this).text().toLowerCase();
     const index = $(this).attr("name");
     $("#animal-card img").remove();
@@ -43,7 +48,8 @@ $(document).ready(function () {
       $(".reveal").fadeIn();
     }
   });
-  $('#movie button').on('click', function () {
+  $('#movie button').click(function (e) {
+    e.preventDefault();
     const txt = $(this).text().toLowerCase();
     const index = $(this).attr("name");
     $("#movie-card img").remove();
@@ -54,7 +60,8 @@ $(document).ready(function () {
       $(".reveal").fadeIn();
     }
   });
-  $('#sport button').on('click', function () {
+  $('#sport button').click(function (e) {
+    e.preventDefault();
     const txt = $(this).text().toLowerCase();
     const index = $(this).attr("name");
     $("#sport-card img").remove();
@@ -66,14 +73,27 @@ $(document).ready(function () {
     }
   });
 
-  $(".form-group").submit(function (e) {
+  $("#formOne").submit(function (e) {
     e.preventDefault();
     const foodValue = parseInt($("#food-card p").attr("value"));
     const activityValue = parseInt($("#activity-card p").attr("value"));
     const animalValue = parseInt($("#animal-card p").attr("value"));
     const movieValue = parseInt($("#movie-card p").attr("value"));
     const sportValue = parseInt($("#sport-card p").attr("value"));
-    console.log(foodValue, activityValue, animalValue, movieValue, sportValue);
+    if (foodValue && activityValue && animalValue && movieValue && sportValue) {
+      const score = getScore(animalValue, activityValue, animalValue, movieValue, sportValue)
+      let language;
+      if (score <= 5) {
+        language = "Python"
+      } else if (score > 5 && score <= 10) {
+        language = "HTML"
+      } else {
+        language = "GO"
+      }
+    } else {
+      alert("Looks like you forgot a question...");
+    }
+    e.preventDefault();
   })
 
 })
