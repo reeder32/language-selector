@@ -73,6 +73,21 @@ $(document).ready(function () {
     }
   });
 
+  $("#start-over").click(function () {
+    $("#formOne").slideDown();
+    $(".output").fadeOut();
+    $("#food-card img").remove();
+    $("#food-card p").remove();
+    $("#activity-card img").remove();
+    $("#activity-card p").remove();
+    $("#animal-card img").remove();
+    $("#animal-card p").remove();
+    $("#movie-card img").remove();
+    $("#movie-card p").remove();
+    $("#sport-card img").remove();
+    $("#sport-card p").remove();
+  });
+
   $("#formOne").submit(function (e) {
     e.preventDefault();
     const foodValue = parseInt($("#food-card p").attr("value"));
@@ -90,10 +105,14 @@ $(document).ready(function () {
       } else {
         language = "GO"
       }
+      $("#formOne").slideUp();
+      $(".reveal").fadeOut();
+      $("#language").text(language);
+      $(".output").fadeIn();
     } else {
       alert("Looks like you forgot a question...");
     }
-    e.preventDefault();
+
   })
 
 })
