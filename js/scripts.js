@@ -6,7 +6,43 @@
 
 // UI Logic
 $(document).ready(function () {
-  $('#dropdown-animal button').on('click', function () {
-    $('#datebox').val($(this).text());
+  $('#food button').on('click', function () {
+    const txt = $(this).text().toLowerCase();
+    if (txt) {
+      $("#food-card").append(`<img src="img/${txt}.jpg" alt="this is a picture of your favorite food.">`);
+      $(".reveal").show();
+    }
+  });
+  $('#activity button').on('click', function () {
+    let txt = $(this).text().toLowerCase();
+    console.log(txt);
+    if (txt) {
+      if (txt === "what's activity?") {
+        txt = "potato";
+      }
+      $("#activity-card").append(`<img src="img/${txt}.jpg" alt="this is a picture of your favorite food.">`);
+      $(".reveal").show();
+    }
+  });
+  $('#animal button').on('click', function () {
+    const txt = $(this).text().toLowerCase();
+    if (txt) {
+      $("#animal-card").append(`<img src="img/${txt}.jpg" alt="this is a picture of your favorite food.">`);
+      $(".reveal").show();
+    }
+  });
+  $('#movie button').on('click', function () {
+    const txt = $(this).text().toLowerCase();
+    if (txt) {
+      $("#movie-card").append(`<img src="img/${txt}.jpg" alt="this is a picture of your favorite food.">`);
+      $(".reveal").show();
+    }
+  });
+  $('#sport button').on('click', function () {
+    const txt = $(this).text().toLowerCase();
+    if (txt) {
+      $("#sport-card").append(`<img src="img/${txt}.jpg" alt="this is a picture of your favorite food.">`);
+      $(".reveal").show();
+    }
   });
 })
