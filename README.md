@@ -2,7 +2,7 @@
 
 #### A project that helps you find the right programming language based on your likes.
 
-Check out page [here](https://reeder32.github.io/portfolio/)
+Check out page [here](hhttps://reeder32.github.io/language-selector/)
 
 #### By Nick Reeder
 
