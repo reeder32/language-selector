@@ -29,7 +29,7 @@ $(document).ready(function () {
     $("#activity-card p").remove();
     if (txt && index) {
       if (txt === "what's activity?") {
-        txt = "potato";
+        txt = "couch potato";
       }
       $("#activity-card").append(`<img src="img/${txt}.jpg" alt="this is a picture of your favorite food.">`);
       $("#activity-card").append(`<p value="${index}">${txt}</p>`);
