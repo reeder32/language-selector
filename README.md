@@ -26,7 +26,7 @@ Check out page [here](hhttps://reeder32.github.io/language-selector/)
 ## License
 
 [MIT License](https://opensource.org/licenses/MIT)
-&copy; Nick Reeder
+&copy; 2021 Nick Reeder
 
 ## Contact Information
 
